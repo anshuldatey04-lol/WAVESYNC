@@ -52,6 +52,9 @@ async function startEmbeddedServer() {
 
 function createWindow(url) {
   windowUrl = url;
+  const iconFile = process.platform === "win32" ? "icon.ico" : "icon.png";
+  const iconPath = path.join(__dirname, iconFile);
+
   mainWindow = new BrowserWindow({
     width: 1360,
     height: 920,
@@ -59,6 +62,7 @@ function createWindow(url) {
     minHeight: 680,
     backgroundColor: "#07070d",
     title: "SYNCWAVE",
+    icon: fs.existsSync(iconPath) ? iconPath : undefined,
     autoHideMenuBar: true,
     show: false,
     webPreferences: {

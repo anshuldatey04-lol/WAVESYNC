@@ -15,13 +15,12 @@ export default function TopNav() {
   return (
     <header className="sticky top-0 z-40 border-b border-white/5 bg-[#0a0a14]/80 backdrop-blur-xl">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6">
-        <button onClick={() => setScreen("home")} className="flex items-center gap-2.5" data-testid="brand">
-          <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-sky-500 to-violet-600 shadow-[0_0_24px_rgba(56,189,248,0.45)]">
-            <svg viewBox="0 0 24 24" className="h-5 w-5 text-white" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round">
-              <path d="M4 14v-2a8 8 0 0 1 16 0v2" />
-              <rect x="4" y="14" width="16" height="4" rx="2" />
-            </svg>
-          </span>
+        <button onClick={() => setScreen("home")} className="flex items-center gap-3 transition-opacity hover:opacity-90" data-testid="brand">
+          <img
+            src="/icon.svg"
+            alt="SYNCWAVE Logo"
+            className="h-9 w-9 rounded-xl shadow-[0_0_24px_rgba(56,189,248,0.45)] transition-transform hover:scale-105"
+          />
           <span className="text-lg font-bold tracking-tight text-white">
             SYNC<span className="bg-gradient-to-r from-sky-400 to-violet-400 bg-clip-text text-transparent">WAVE</span>
           </span>

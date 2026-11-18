@@ -1,5 +1,20 @@
 # SYNCWAVE
 
+<div align="center">
+  <img src="public/logo.svg" alt="SYNCWAVE Logo" width="480" />
+  <br />
+  <br />
+
+  [![Download Syncwave.exe](https://img.shields.io/badge/Download-Syncwave.exe%20(Windows)-06b6d4?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/anshuldatey04-lol/WAVESYNC/releases/download/v0.1.0/Syncwave.exe)
+  [![GitHub Release](https://img.shields.io/github/v/release/anshuldatey04-lol/WAVESYNC?style=for-the-badge&color=8b5cf6)](https://github.com/anshuldatey04-lol/WAVESYNC/releases/latest)
+  <br />
+
+  <h3>🚀 <a href="https://github.com/anshuldatey04-lol/WAVESYNC/releases/download/v0.1.0/Syncwave.exe">Click here to Download Syncwave.exe (Windows Installer)</a></h3>
+  <p>Also available: <a href="https://github.com/anshuldatey04-lol/WAVESYNC/releases/download/v0.1.0/SYNCWAVE.0.1.0.exe">Portable Executable</a> &bull; <a href="https://github.com/anshuldatey04-lol/WAVESYNC/releases">All Releases</a></p>
+</div>
+
+---
+
 ![SYNCWAVE home screen](docs/hero.png)
 
 SYNCWAVE is a production-shaped web app that turns one **authorized** audio file into synchronized

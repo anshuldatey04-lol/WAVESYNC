@@ -1,6 +1,7 @@
 node_modules/
 dist/
 release/
+*.lnk
 .env
 .env.local
 *.local

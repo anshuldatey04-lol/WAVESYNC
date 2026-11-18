@@ -17,6 +17,9 @@
     "desktop": "electron .",
     "desktop:dev": "electron . --dev",
     "dist": "npm run build && electron-builder",
+    "dist:dir": "npm run build && electron-builder --dir",
+    "dist:portable": "npm run build && electron-builder --win portable",
+    "icons": "powershell -ExecutionPolicy Bypass -File scripts/generate-icons.ps1",
     "smoke": "node smoke-test.mjs"
   },
   "dependencies": {
@@ -60,14 +63,21 @@
     ],
     "asar": true,
     "win": {
+      "icon": "build/icon.ico",
       "target": [
-        "nsis"
+        "nsis",
+        "portable"
       ]
     },
     "nsis": {
       "oneClick": false,
       "perMachine": false,
-      "allowToChangeInstallationDirectory": true
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "SYNCWAVE",
+      "installerIcon": "build/icon.ico",
+      "uninstallerIcon": "build/icon.ico"
     },
     "mac": {
       "target": [
